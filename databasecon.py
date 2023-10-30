@@ -1,6 +1,6 @@
 from sqlalchemy import text,create_engine
 
-connection_string ="mysql+mysqlconnector://uqherguranyqxm11k6ew:pscale_pw_z6PAlJnC4RAbVecv3SSVNYrspPO701qIJubmZPmhWrw@aws.connect.psdb.cloud/shopez"
+connection_string ="mysql+mysqlconnector://38qgj2jzjlqiptyqih4i:pscale_pw_UdvHoFuJsbsVnjQMSoRPVBjYUdHPY1fDNdszfnuxMZT@aws.connect.psdb.cloud/shopez"
 
 engine = create_engine(connection_string)
 items=[]
