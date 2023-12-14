@@ -20,12 +20,14 @@
                             </ul>
                         </li>
                     </ul>
-                    <form class="d-flex">
-                        <button class="btn btn-outline-dark" type="submit",a href="{{ url_for('cart') }}">
+                    <form class="d-flex" action="{{ url_for('cart') }}">
+                        <!-- <a href="{{ url_for('cart') }}"> -->
+                        <button class="btn btn-outline-dark" type="submit">
                             <i class="bi-cart-fill me-1"></i>
                             Cart
                             <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
                         </button>
+                        <!-- </a> -->
                     </form>
                 </div>
             </div>
@@ -60,7 +62,7 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="{{ url_for('item') }}">View options</a></div>
                             </div>
                         </div>
                     </div>
